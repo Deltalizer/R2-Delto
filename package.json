@@ -15,6 +15,7 @@
     "@discordjs/voice": "^0.8.0",
     "discord-api-types": "^0.29.0",
     "discord.js": "^13.6.0",
+    "ffmpeg-static": "^4.4.1",
     "google-auth-library": "^7.14.1",
     "googleapis": "^97.0.0",
     "sodium": "^3.0.2"

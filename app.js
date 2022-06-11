@@ -326,7 +326,7 @@ function downloadSong (videoId, cb) {
             console.log("Song is already cached");
             cb();
         } else if(err.code === 'ENOENT') {
-            args = ['-f best*[vcodec=none]', '-o \\cache\\%(id)s.%(ext)s', '-x --audio-format vorbis', 'https://www.youtube.com/watch?v=' + videoId]
+            args = ['-f best*[vcodec=none]', '-o \\..\\cache\\%(id)s.%(ext)s', '-x --audio-format vorbis', 'https://www.youtube.com/watch?v=' + videoId]
             const ls = spawn("./exes/yt-dlp.exe", args, {windowsVerbatimArguments: true});
 
             ls.stdout.on("data", data => {

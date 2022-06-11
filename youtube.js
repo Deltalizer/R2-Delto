@@ -5,9 +5,8 @@ const auth = require('sodium/lib/auth');
 var OAuth2 = google.auth.OAuth2;
 
 var SCOPES = ['https://www.googleapis.com/auth/youtube.readonly'];
-var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
-    process.env.USERPROFILE) + '/.credentials/';
-var TOKEN_PATH = TOKEN_DIR + 'youtube-nodejs-quickstart.json';
+var TOKEN_DIR = (__dirname);
+var TOKEN_PATH = TOKEN_DIR + '\\yt-token.json';
 
 var authed = {};
 
